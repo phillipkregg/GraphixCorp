@@ -1,0 +1,55 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+
+@import "bootstrap";
+@import "bourbon";
+
+header {
+  padding-top: 30px;
+  height: 150px;
+  background: url('/assets/header_blue_gradient.png');
+}
+
+
+.note {
+  
+   h1 {
+     color: #2D5F9F;
+   }
+   p {
+     color: black;
+   }
+   position:relative;
+   width:100%;
+   padding:1em 1.5em;
+   margin:2em auto;
+   color:#fff;
+   background:#97C02F;
+   overflow:hidden;
+}
+
+.note:before {
+   content:"";
+   position:absolute;
+   top:0;
+   left:0;
+   border-width: 20px 20px 0  0;
+   border-style:solid;
+   border-color: #fff #658E15;
+   background:#658E15;
+   -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+   -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+   box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+   display:block; width:0; /* Firefox 3.0 damage limitation */
+}
