@@ -22,6 +22,27 @@ header {
 }
 
 
+.navbar {
+  width: 960px;
+}
+
+#graphic_design {
+  background: url('/assets/gold_background.png');
+  width: 920px;
+  height: 310px;
+  padding: 20px;
+  
+  h1 {
+     color: #2D5F9F;
+  }
+  
+  
+    
+  
+}
+
+
+
 .note {
   
    h1 {
@@ -53,3 +74,109 @@ header {
    box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
    display:block; width:0; /* Firefox 3.0 damage limitation */
 }
+
+
+.footer_note {
+  
+  ul {
+    clear: both;
+    
+    li{
+      float: left;
+      list-style-type: none;
+      margin-right: 10px;
+      
+      a {
+        color: #666;
+      }
+      
+    }
+  }
+  
+   h1 {
+     color: #2D5F9F;
+   }
+   p {
+     color: black;
+   }
+   position:relative;
+   width:100%;
+   padding:1em 1.5em;
+   margin:2em auto;
+   color:#666;
+   background:#000;
+   overflow:hidden;
+}
+
+.footer_note:before {
+   content:"";
+   position:absolute;
+   top:0;
+   left:0;
+   border-width: 20px 20px 0  0;
+   border-style:solid;
+   border-color: #fff #658E15;
+   background:#658E15;
+   -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+   -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+   box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+   display:block; width:0; /* Firefox 3.0 damage limitation */
+}
+
+
+
+
+#services_nav {
+  width: 940px;
+  background: #666;
+  
+  
+  
+  ul {
+    text-align: center;
+    
+    li {
+      background: #666;
+      height: 50px;
+      width: 200px;
+      list-style-type: none;
+      float: left;
+      margin-right: 10px;
+      
+      a {
+        font-size: 1.5em;
+      }
+      
+    } 
+     
+  }
+  
+  
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
