@@ -8,56 +8,67 @@
 </head>
 <body>
 	
-	<header>
-		<div class="container">
-			<img class="pull-left" src="/assets/graphixcorp_logo.png" title="GraphixCorp Official Site" alt="GraphixCorp" />
-			<h3 class="pull-right">Call: 123-456-7890</h3>
-		</div>		
-	</header>
+	<div id="gray_blue_container">
 	
-	<div class="container">		
+		<header>
+			<div class="container">
+				<img class="pull-left" src="/assets/graphixcorp_logo.png" title="GraphixCorp Official Site" alt="GraphixCorp" />
+				<h3 class="pull-right">Call: 123-456-7890</h3>
+			</div>		
+		</header>
 		
-		<div class="navbar">
-			<div class="navbar-inner">
-				<ul class="nav">
-					<li class="active"><a href="#">Home</a></li>
+		<div class="container">		
+			
+			<div class="navbar">
+				<div class="navbar-inner">
+					<ul class="nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Products</a></li>
+						<li><a href="#">Testamonials</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<%= yield %>			
+			
+		</div>
+		
+		
+	
+	</div>
+	
+	
+	
+	
+		
+		
+		<div class=" container">		
+			<div class="footer_note">
+				<form>
+					<input type="text" placeholder="Your Name" />
+					<input type="text" placeholder="Email Address" />
+					<button>Subscribe</button>
+				</form>
+				<ul>
+					<li><a href="#">Home</a></li>
 					<li><a href="#">About Us</a></li>
 					<li><a href="#">Services</a></li>
 					<li><a href="#">Products</a></li>
-					<li><a href="#">Testamonials</a></li>
+					<li><a href="#">Testimonials</a></li>
 					<li><a href="#">Blog</a></li>
 					<li><a href="#">Contact Us</a></li>
-				</ul>
+				</ul>		
+				
+				Copyright&copy 2012 - GraphixCorp	
+				
 			</div>
 		</div>
 		
-		<%= yield %>
-	</div>
 	
-	<footer class="container">
-		
-		<div class="footer_note">
-			<form>
-				<input type="text" placeholder="Your Name" />
-				<input type="text" placeholder="Email Address" />
-				<button>Subscribe</button>
-			</form>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Products</a></li>
-				<li><a href="#">Testimonials</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Contact Us</a></li>
-			</ul>		
-			
-			Copyright&copy 2012 - GraphixCorp	
-			
-		</div>
-		
-		
-	</footer>
 
 
 </body>
