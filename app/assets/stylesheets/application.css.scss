@@ -70,6 +70,39 @@ header {
 
 
 
+.note {
+  
+   
+   p {
+     color: black;
+   }
+   position:relative;   
+   padding:1em 1.5em;
+   //margin:2em auto;
+   color:#666;
+   background:#000;
+   overflow:hidden;
+  
+}
+
+.note:before {
+  
+   content:"";
+   position:absolute;
+   top:0;
+   left:0;
+   border-width: 20px 20px 0  0;
+   border-style:solid;
+   border-color: #fff #658E15;
+   background:#658E15;
+   -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+   -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+   box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+   display:block; width:0; /* Firefox 3.0 damage limitation */
+  
+}
+
+
 
 .footer_note {
   
@@ -121,7 +154,7 @@ header {
 
 
 
-#services_nav {
+.services_nav {
   
   @media (min-width: 768px) { 
     
@@ -129,7 +162,7 @@ header {
     position:relative;
     left:-50%;
     text-align:left;    
-    margin-top: -22px;
+    margin-top: -10px;
     
     ul {
       list-style:none;
@@ -148,7 +181,14 @@ header {
               background: url('/assets/services_nav_background.png');
               float: left;            
               color: #666;
+              @media (min-width: 1200px) { 
+                padding: 30px 70px;
+              }
+              @media (min-width: 768px) and (max-width: 979px) { 
+                padding: 30px 35px;
+              }
               padding: 30px 63px;
+              
               text-align: center;
               white-space: nowrap;
               font-size: 1.2em;
@@ -163,11 +203,65 @@ header {
             
         }
         
+    }  
+  
+  } // End 768 media query
+  
+  
+  /* Landscape phone to portrait tablet */
+  @media (max-width: 767px) { 
+    
+    ul {
+      margin: 0;      
+      list-style: none;
+    
+      li {        
+        float: left;
+        
+        a {
+          display: inline-block;
+          padding: 20px 10px;          
+          font-size: 1em;
+          color: #666;
+          background: #e5e5e5;
+          
+        }
+        
+      }
+      
     }
   
+  }
   
   
-  } // End media query
+  /* Landscape phones and down */
+  @media (max-width: 480px) {    
+    
+    ul {
+      list-style:none;
+      margin: 0;
+      
+      li {
+        margin-left: 0;
+        float: none;
+        width: auto;
+        
+        
+        a {
+          display: block;
+          padding: 10px 20px;          
+          font-size: 1.2em;
+          
+          background: #e5e5e5;
+          
+        }
+        
+      }
+      
+    }     
+    
+    
+  }
   
   
     
