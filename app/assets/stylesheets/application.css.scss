@@ -13,6 +13,7 @@
 */
 
 @import "bootstrap";
+@import "bootstrap-responsive";
 @import "bourbon";
 
 header {
@@ -37,10 +38,9 @@ header {
 
 
 #graphic_design {
-  background: url('/assets/gold_background.png');  
+  background: url('/assets/gold_background.png') no-repeat #F2D500 right;  
   height: 310px;
-  padding: 20px;
-  
+  padding: 20px;      
   
   h1 {
      color: #2D5F9F;
