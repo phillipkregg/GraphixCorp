@@ -13,8 +13,10 @@
 */
 
 @import "bootstrap";
-@import "bootstrap-responsive";
 @import "bourbon";
+@import "bootstrap-responsive";
+
+
 
 header {
   padding-top: 30px;
@@ -38,8 +40,14 @@ header {
 
 
 #graphic_design {
-  background: url('/assets/gold_background.png') no-repeat #F2D500 right;  
-  height: 310px;
+  
+  /* Portrait tablet to landscape and desktop */
+  @media (min-width: 768px) { 
+    background: url('/assets/gold_background.png') no-repeat #F2D500 right; 
+    height: 310px;
+  }
+  
+  background-color: #F2D500;     
   padding: 20px;      
   
   h1 {
@@ -114,45 +122,56 @@ header {
 
 
 #services_nav {
-  float:right;
-  position:relative;
-  left:-50%;
-  text-align:left;    
-  margin-top: -22px;
+  
+  @media (min-width: 768px) { 
     
-  ul {
-    list-style:none;
+    float:right;
     position:relative;
-    left:49%;
-    padding-left: 0;
-          
-      li {                        
-          
-          float: left;
-          position:relative;
-          
-          
-          a {                         
-            margin: 0px;
-            background: url('/assets/services_nav_background.png');
-            float: left;            
-            color: #666;
-            padding: 30px 63px;
-            text-align: center;
-            white-space: nowrap;
-            font-size: 1.2em;
+    left:-50%;
+    text-align:left;    
+    margin-top: -22px;
+    
+    ul {
+      list-style:none;
+      position:relative;
+      left:49%;
+      padding-left: 0;
             
-            &:hover {
-              background: gold;
-              color: white;
+        li {                        
+            
+            float: left;
+            position:relative;
+            
+            
+            a {                         
+              margin: 0px;
+              background: url('/assets/services_nav_background.png');
+              float: left;            
+              color: #666;
+              padding: 30px 63px;
+              text-align: center;
+              white-space: nowrap;
+              font-size: 1.2em;
+              
+              &:hover {
+                background: gold;
+                color: white;
+              }
+              
+              
             }
             
-            
-          }
-          
-      }
-      
-  }
+        }
+        
+    }
+  
+  
+  
+  } // End media query
+  
+  
+    
+  
     
 }
 
