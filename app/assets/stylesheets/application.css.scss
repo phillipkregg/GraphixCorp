@@ -25,16 +25,33 @@ header {
 }
 
 
+.btn-primary {
+  
+  border: #87A93C;
+  
+  background: rgb(154,138,6); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(154,138,6,1) 0%, rgba(135,169,60,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(154,138,6,1)), color-stop(100%,rgba(135,169,60,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(154,138,6,1) 0%,rgba(135,169,60,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(154,138,6,1) 0%,rgba(135,169,60,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(154,138,6,1) 0%,rgba(135,169,60,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(154,138,6,1) 0%,rgba(135,169,60,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9a8a06', endColorstr='#87a93c',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+
 .navbar {
   
 }
 
 
 
-#gray_blue_container {
-  
-  background: url('/assets/blue_gray_header_gradient.png');
-  
+#gray_blue_container {  
+  @media (min-width: 768px) {
+    background: url('/assets/blue_gray_header_gradient.png');    
+  }  
 }
 
 
@@ -43,11 +60,29 @@ header {
   
   /* Portrait tablet to landscape and desktop */
   @media (min-width: 768px) { 
-    background: url('/assets/gold_background.png') no-repeat #F2D500 right; 
+    background: url('/assets/white_burst.png') no-repeat right; 
     height: 310px;
+    
+    background: url('/assets/white_burst.png') no-repeat right rgb(242,212,0); /* Old browsers */
+    background: url('/assets/white_burst.png') no-repeat right -moz-linear-gradient(top,  rgba(242,212,0,1) 0%, rgba(247,224,18,1) 47%, rgba(234,190,0,1) 100%); /* FF3.6+ */
+    background: url('/assets/white_burst.png') no-repeat right -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,212,0,1)), color-stop(47%,rgba(247,224,18,1)), color-stop(100%,rgba(234,190,0,1))); /* Chrome,Safari4+ */
+    background: url('/assets/white_burst.png') no-repeat right -webkit-linear-gradient(top,  rgba(242,212,0,1) 0%,rgba(247,224,18,1) 47%,rgba(234,190,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: url('/assets/white_burst.png') no-repeat right -o-linear-gradient(top,  rgba(242,212,0,1) 0%,rgba(247,224,18,1) 47%,rgba(234,190,0,1) 100%); /* Opera 11.10+ */
+    background: url('/assets/white_burst.png') no-repeat right -ms-linear-gradient(top,  rgba(242,212,0,1) 0%,rgba(247,224,18,1) 47%,rgba(234,190,0,1) 100%); /* IE10+ */
+    background: url('/assets/white_burst.png') no-repeat right linear-gradient(to bottom,  rgba(242,212,0,1) 0%,rgba(247,224,18,1) 47%,rgba(234,190,0,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2d400', endColorstr='#eabe00',GradientType=0 ); /* IE6-9 */
+
   }
   
-  background-color: #F2D500;     
+  background: rgb(242,212,0); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(242,212,0,1) 0%, rgba(247,224,18,1) 47%, rgba(234,190,0,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,212,0,1)), color-stop(47%,rgba(247,224,18,1)), color-stop(100%,rgba(234,190,0,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(242,212,0,1) 0%,rgba(247,224,18,1) 47%,rgba(234,190,0,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(242,212,0,1) 0%,rgba(247,224,18,1) 47%,rgba(234,190,0,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(242,212,0,1) 0%,rgba(247,224,18,1) 47%,rgba(234,190,0,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(242,212,0,1) 0%,rgba(247,224,18,1) 47%,rgba(234,190,0,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2d400', endColorstr='#eabe00',GradientType=0 ); /* IE6-9 */
+ 
   padding: 20px;      
   
   h1 {
@@ -93,7 +128,7 @@ header {
    left:0;
    border-width: 20px 20px 0  0;
    border-style:solid;
-   border-color: #fff #658E15;
+   border-color: #fff #2C5E9E;
    background:#658E15;
    -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
    -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
@@ -194,8 +229,12 @@ header {
               font-size: 1.2em;
               
               &:hover {
-                background: gold;
+                
                 color: white;
+                
+                background: #F2DA36;
+                
+                
               }
               
               
@@ -225,6 +264,12 @@ header {
           color: #666;
           background: #e5e5e5;
           
+          &:hover {
+            color: white;
+            background: #F2DA36;    
+            
+          }
+          
         }
         
       }
@@ -253,6 +298,13 @@ header {
           font-size: 1.2em;
           
           background: #e5e5e5;
+          
+          &:hover {
+            color: white;
+            background: #F2DA36;
+
+          }
+          
           
         }
         
